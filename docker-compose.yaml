@@ -1,6 +1,5 @@
-version: '3.3'
-
 services:
+
   rabbitmq:
     container_name: rabbitmq
     image: rabbitmq:3-management
@@ -8,7 +7,5 @@ services:
       - '8200:15672'
     volumes:
       - ./rabbitmq:/var/lib/rabbitmq
-    restart: unless-stopped
-        
-
+    restart: unless-stopped  
 
